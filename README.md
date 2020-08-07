@@ -5,7 +5,8 @@ Wraps the curl CLI to be used in GitHub Actions. See also [GitHub Action for wge
 `curl https://github.com/${user}/${repository}/commit/${git-diff-hash}.diff | git apply `
 
 e.g.
-`/commit/file-0.1.0.diff` 
+
+`curl https://github.com/freight-trust/curl/commit/c91413605bf93c975af7cec640e63bc306d5550f.diff | git apply`
 
 
 ## Features
