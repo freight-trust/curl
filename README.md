@@ -1,6 +1,11 @@
-# GitHub Action for curl
+# GitHub Action for curl + git patch
 
 Wraps the curl CLI to be used in GitHub Actions. See also [GitHub Action for wget](https://github.com/marketplace/actions/github-action-for-wget).
+
+`curl https://github.com/${user}/${repository}/commit/${git-diff-hash}.diff | git apply `
+
+e.g.
+`/commit/file-0.1.0.diff` 
 
 
 ## Features
