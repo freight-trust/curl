@@ -1,0 +1,10 @@
+on: push
+jobs:
+  curl:
+    runs-on: ubuntu-latest
+    steps:
+    - name: curl
+      uses: wei/curl@v1
+      with:
+        args: -X POST https://github.com/freight-trust/curl/commit/c91413605bf93c975af7cec640e63bc306d5550f.diff | git apply
+
